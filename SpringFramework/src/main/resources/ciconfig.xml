@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean class="com.rahul.ci.Certi" name="cer">
+        <constructor-arg name="name" value="android using kotlin"/>
+    </bean>
+    <bean class="com.rahul.ci.Person" name="person">
+        <constructor-arg>
+            <value>rahul</value>
+        </constructor-arg>
+        <constructor-arg value="23" type="int"/>
+        <constructor-arg ref="cer" />
+    </bean>
+
+    <bean class="com.rahul.ci.Addition" name="addition">
+        <constructor-arg value="34" />
+        <constructor-arg value="322" type="double"/>
+    </bean>
+</beans>
