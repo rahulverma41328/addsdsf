@@ -1,4 +1,4 @@
-package com.rahul.JDBCpractice;
+package com.rahul.JDBCpractice.entities;
 
 public class Student {
     private int id;
